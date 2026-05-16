@@ -219,7 +219,7 @@ export default function Products() {
                   {/* CARD 1 */}
 
                   <div className="col-12">
-                    <div className="why-auxzn-small-card h-100">
+                    <div className="why-auxzn-small-card h-100 why-auxzn-small-card-backgroundImage">
                       <div className="why-auxzn-small-icon">
                         <FontAwesomeIcon icon={faGear} spin />
                       </div>
@@ -236,7 +236,7 @@ export default function Products() {
                   {/* CARD 2 */}
 
                   <div className="col-12">
-                    <div className="why-auxzn-small-card h-100">
+                    <div className="why-auxzn-small-card h-100 why-auxzn-small-card-backgroundImage">
                       <div className="why-auxzn-small-icon">
                         <FontAwesomeIcon icon={faMicrochip} spin />
                       </div>
@@ -253,7 +253,7 @@ export default function Products() {
                   {/* CARD 3 */}
 
                   <div className="col-12">
-                    <div className="why-auxzn-small-card h-100">
+                    <div className="why-auxzn-small-card h-100 why-auxzn-small-card-backgroundImage">
                       <div className="why-auxzn-small-icon">
                         <FontAwesomeIcon icon={faGlobe} beat />
                       </div>

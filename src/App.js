@@ -1,20 +1,3 @@
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import Home from './Pages/Home';
-// import Navbar from './Components/Navbar';
-
-// function App() {
-//   return (
-//    <div>
-//     <Navbar />
-//     <Home />
-//    </div>
-//   );
-// }
-
-// export default App;
-
-
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import {
