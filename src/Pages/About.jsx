@@ -1,6 +1,9 @@
 import React from "react";
 import Footer from "../Components/Footer";
 import FadeUp from "../Components/FadeUp";
+import { useState } from "react";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLightbulb,
@@ -17,10 +20,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Banner from "../Assets/Images/Auxzn banner.jpg";
 import logo from "../Assets/Images/Auxznlogo.png";
-
+import ContactComponent from "../Components/ContactComponent";
 import "../App.css";
 
 export default function About() {
+  const [counterOn, setCounterOn] = useState(false);
+  const [on, setOn] = useState(false);
+
   return (
     <div className="container-fluid m-0 p-0">
       {/* Banner */}
@@ -43,7 +49,7 @@ export default function About() {
                 />
               </span>
             </h1>
-            <p className="textColor mt-3 about-subtext">
+            <p className="textColor  about-subtext">
               Driving industrial innovation with precision, reliability, and
               smart automation solutions.
             </p>
@@ -205,49 +211,81 @@ export default function About() {
       </FadeUp>
 
       <FadeUp className="w-100">
-        <section className="contact-section py-5">
-          <div className="container">
-            <div className="contact-banner row align-items-center g-0 overflow-hidden">
-              {/* LEFT CONTENT */}
-              <div className="col-lg-7">
-                <div className="contact-content">
-                  <h2 className="contact-heading">Feel free to reach us!</h2>
+        <div className="container-fluid org-section mt-5">
+          <div className="row">
+            <div className="col-12">
+              <h1 className="auxznColor fw-bold text-center">
+                About Our Organization
+              </h1>
+              <p className="textColor text-center">
+                Delivering quality, innovation, and reliable solutions for
+                sustainable growth.
+              </p>
+            </div>
+          </div>
+          <section className="mt-5">
+            <div className="container">
+              <div className="row align-items-center">
+                {/* LEFT SIDE */}
+                <div className="col-lg-6">
+                  <h4 className="org-title">
+                    Global Engineering.
+                    <br />
+                    Local Expertise.
+                  </h4>
 
-                  <p className="contact-description">
-                    Whether you need support, product information, or customized
-                    industrial solutions, our team is ready to help you with
-                    reliable guidance and quick assistance.
+                  <p className="org-text">
+                    At Auzxn, we are committed to delivering innovative,
+                    reliable, and high-quality solutions that help businesses
+                    grow with confidence. Our organization focuses on combining
+                    technology, creativity, and customer-centric values to
+                    create impactful services tailored to modern industry needs.
                   </p>
 
-                  <div className="d-flex flex-wrap gap-3 mt-4">
-                    <button className="contact-btn">Contact Us</button>
-
-                    <button className="contact-outline-btn">
-                      Explore Products
-                    </button>
-                  </div>
+                  <p className="org-text">
+                    Our Tech Centers provide real-world process validation,
+                    helping industries achieve efficiency and precision.
+                  </p>
                 </div>
-              </div>
 
-              {/* RIGHT SIDE DESIGN */}
-              <div className="col-lg-5">
-                <div className="contact-visual">
-                  <div className="contact-box contact-box-1"></div>
-                  <div className="contact-box contact-box-2"></div>
-                  <div className="contact-box contact-box-3"></div>
+                {/* RIGHT SIDE (GLASS PANEL COUNTER) */}
+                <div className="col-lg-6">
+                  <section className="stats-section">
+                    <ScrollTrigger onEnter={() => setOn(true)}>
+                      <div className="container">
+                        <div className="stats-wrapper">
+                          <div className="stat-item">
+                            <h1>{on && <CountUp end={50} duration={2} />}+</h1>
+                            <p>Years Experience</p>
+                          </div>
 
-                  <div className="contact-circle"></div>
+                          <div className="stat-divider"></div>
 
-                  <div className="contact-card-floating">
-                    <h4>24/7 Support</h4>
-                    <p>Reliable industrial assistance worldwide.</p>
-                  </div>
+                          <div className="stat-item">
+                            <h1>{on && <CountUp end={13} duration={2} />}+</h1>
+                            <p>Global Offices</p>
+                          </div>
+
+                          <div className="stat-divider"></div>
+
+                          <div className="stat-item">
+                            <h1>{on && <CountUp end={80} duration={2} />}+</h1>
+                            <p>Countries Served</p>
+                          </div>
+                        </div>
+                      </div>
+                    </ScrollTrigger>
+                  </section>
                 </div>
               </div>
             </div>
-          </div>
-        </section>{" "}
+          </section>
+        </div>
       </FadeUp>
+
+    <FadeUp className="w-100">
+          <ContactComponent />
+        </FadeUp>
 
       {/* Footer */}
       <FadeUp className="w-100">

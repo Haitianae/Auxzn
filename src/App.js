@@ -12,7 +12,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Products from "./Pages/Products/Products";
 // import Blogs from "./Pages/Blogs";
-// import Contact from "./Pages/Contact";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         {/* <Route path="/blogs" element={<Blogs />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </HashRouter>
   );

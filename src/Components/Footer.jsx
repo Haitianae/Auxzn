@@ -9,6 +9,7 @@ import {
   faInstagram,
   faLinkedinIn,
   faWhatsapp,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { NavLink } from "react-router-dom";
@@ -24,7 +25,11 @@ export default function Footer() {
           <div className="col-12 md-4  col-lg-4 ">
             <div className="d-flex align-items-center mb-3 ">
               <NavLink to="/">
-                <img src={AuxznLogo} alt="Auxzn Logo" className="footer-logo " />
+                <img
+                  src={AuxznLogo}
+                  alt="Auxzn Logo"
+                  className="footer-logo "
+                />
               </NavLink>
             </div>
 
@@ -90,20 +95,41 @@ export default function Footer() {
             <h5 className="footer-title auxznColor">Follow Us</h5>
 
             <div className="footer-socials">
-              <a href="/">
+              <a
+                href="https://www.facebook.com/Auxzn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
 
-              <a href="/">
+              <a
+                href="https://www.instagram.com/auxzn_blowmolding/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
 
-              <a href="/">
+              <a
+                href="https://www.linkedin.com/company/117323921/admin/dashboard/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
 
+              <a
+                href="https://x.com/auxzn_blowmold"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <FontAwesomeIcon icon={faXTwitter} />
+              </a>
+
               <a href="/">
-                <FontAwesomeIcon icon={faWhatsapp} />
+                <FontAwesomeIcon icon={faWhatsapp}  />
               </a>
             </div>
           </div>

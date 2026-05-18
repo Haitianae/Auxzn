@@ -20,6 +20,7 @@ import Drying from "../Assets/Images/Drying and dehumidifying.jpg";
 import Heating from "../Assets/Images/Heating and cooling.jpg";
 import Dosing from "../Assets/Images/Dosing and mixing.jpg";
 import Feeding from "../Assets/Images/Feeding and conveying.jpg";
+import ContactComponent from "../Components/ContactComponent";
 
 const products = [
   { img: Drying, title: "Drying and dehumidifying" },
@@ -118,7 +119,9 @@ export default function Home() {
               <div className="col-12 text-center">
                 <h2 className="auxznColor fw-bold">Why Choose Us ?</h2>
 
-                <p className="textColor">What drives us forward and shapes every partnership</p>
+                <p className="textColor">
+                  What drives us forward and shapes every partnership
+                </p>
               </div>
             </div>
           </FadeUp>
@@ -207,48 +210,7 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
       <FadeUp className="w-100">
-        <section className="contact-section py-5">
-          <div className="container">
-            <div className="contact-banner row align-items-center g-0 overflow-hidden">
-              {/* LEFT CONTENT */}
-              <div className="col-lg-7">
-                <div className="contact-content">
-                  <h2 className="contact-heading">Feel free to reach us!</h2>
-
-                  <p className="contact-description">
-                    Whether you need support, product information, or customized
-                    industrial solutions, our team is ready to help you with
-                    reliable guidance and quick assistance.
-                  </p>
-
-                  <div className="d-flex flex-wrap gap-3 mt-4">
-                    <button className="contact-btn">Contact Us</button>
-
-                    <button className="contact-outline-btn">
-                      Explore Products
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* RIGHT SIDE DESIGN */}
-              <div className="col-lg-5">
-                <div className="contact-visual">
-                  <div className="contact-box contact-box-1"></div>
-                  <div className="contact-box contact-box-2"></div>
-                  <div className="contact-box contact-box-3"></div>
-
-                  <div className="contact-circle"></div>
-
-                  <div className="contact-card-floating">
-                    <h4>24/7 Support</h4>
-                    <p>Reliable industrial assistance worldwide.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>{" "}
+        <ContactComponent />
       </FadeUp>
 
       {/* Footer */}
