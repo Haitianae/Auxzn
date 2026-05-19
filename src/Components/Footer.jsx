@@ -18,7 +18,7 @@ import "../App.css";
 
 export default function Footer() {
   return (
-    <footer className="footer-section mt-5">
+    <footer className="footer-section">
       <div className="container">
         <div className="row gy-5 justify-content-between">
           {/* COMPANY INFO */}
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           {/* QUICK LINKS */}
-          <div className="col-12 col-md-6 col-lg-2">
+          <div className="col-5 col-md-6 col-lg-2">
             <h5 className="footer-title auxznColor">Quick Links</h5>
 
             <ul className="footer-links">
@@ -78,21 +78,28 @@ export default function Footer() {
           </div>
 
           {/* CONTACT */}
-          <div className="col-12 col-md-6 col-lg-3">
+          <div className="col-7 col-md-6 col-lg-3">
             <h5 className="footer-title auxznColor">Contact</h5>
 
             <ul className="footer-contact">
-              <li>No. 24, Industrial Avenue, Chennai, Tamil Nadu, India</li>
-
-              <li>+91 98765 43210</li>
-
-              <li>support@auxzn.com</li>
+              <li>No. 00, Industrial Avenue, <br /> Street, City, UAE -123456 </li>
+              
+              <li>
+                <a href="tel:+919876543210" className="footer-contact-link">
+                  +971 98765 43210
+                </a>
+              </li>
+              <li>
+                <a href="mailto:aux@auxzn.com" className="footer-contact-link">
+                  aux@auxzn.com
+                </a>
+              </li>{" "}
             </ul>
           </div>
 
           {/* SOCIAL */}
           <div className="col-12 col-lg-2">
-            <h5 className="footer-title auxznColor">Follow Us</h5>
+            <h5 className="footer-title auxznColor ">Follow Us</h5>
 
             <div className="footer-socials">
               <a
@@ -129,7 +136,7 @@ export default function Footer() {
               </a>
 
               <a href="/">
-                <FontAwesomeIcon icon={faWhatsapp}  />
+                <FontAwesomeIcon icon={faWhatsapp} />
               </a>
             </div>
           </div>

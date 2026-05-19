@@ -214,7 +214,7 @@ export default function Home() {
       </FadeUp>
 
       {/* Footer */}
-      <FadeUp className="w-100">
+      <FadeUp className="w-100 mt-5">
         <Footer />
       </FadeUp>
     </div>
