@@ -2,15 +2,39 @@ import { Navbar as BsNavbar, Nav, Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+
+import { useEffect, useState } from "react";
 
 import "../App.css";
 
 import AuxznLogo from "../Assets/Images/Auxznlogo.png";
 
 export default function Navbar() {
+  const [expanded, setExpanded] = useState(false);
+
+  const location = useLocation();
+
+  /* SCROLL TO TOP ON ROUTE CHANGE */
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location.pathname]);
+
+  /* CLOSE MOBILE MENU */
+  const closeMenu = () => {
+    setExpanded(false);
+  };
+
   return (
-    <BsNavbar expand="lg" sticky="top" className="app-navbar">
+    <BsNavbar
+      expand="lg"
+      sticky="top"
+      expanded={expanded}
+      className="app-navbar"
+    >
       <Container>
         {/* LOGO */}
         <BsNavbar.Brand as={NavLink} to="/" className="app-navbar__brand">
@@ -27,6 +51,7 @@ export default function Navbar() {
         <BsNavbar.Toggle
           aria-controls="main-navbar"
           className="app-navbar__toggle"
+          onClick={() => setExpanded(expanded ? false : true)}
         />
 
         {/* NAVIGATION */}
@@ -36,6 +61,7 @@ export default function Navbar() {
               as={NavLink}
               to="/"
               end
+              onClick={closeMenu}
               className="app-navbar__link text-center text-lg-start"
             >
               Home
@@ -44,6 +70,7 @@ export default function Navbar() {
             <Nav.Link
               as={NavLink}
               to="/products"
+              onClick={closeMenu}
               className="app-navbar__link text-center text-lg-start"
             >
               Products
@@ -52,6 +79,7 @@ export default function Navbar() {
             <Nav.Link
               as={NavLink}
               to="/about"
+              onClick={closeMenu}
               className="app-navbar__link text-center text-lg-start"
             >
               About Us
@@ -60,6 +88,7 @@ export default function Navbar() {
             <Nav.Link
               as={NavLink}
               to="/blogs"
+              onClick={closeMenu}
               className="app-navbar__link text-center text-lg-start"
             >
               Blogs
@@ -68,6 +97,7 @@ export default function Navbar() {
             <Nav.Link
               as={NavLink}
               to="/contact"
+              onClick={closeMenu}
               className="app-navbar__cta text-center text-lg-start"
             >
               Contact Us

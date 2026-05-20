@@ -94,7 +94,7 @@ export default function Home() {
 
                     <NavLink
                       to="/products"
-                      className="contact-btn learn-more-btn text-decoration-none mx-auto"
+                      className="learn-more-btn text-decoration-none mx-auto"
                     >
                       Learn More{" "}
                       <FontAwesomeIcon
