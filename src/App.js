@@ -1,17 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import {
-  HashRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Products from "./Pages/Products/Products";
-// import Blogs from "./Pages/Blogs";
+import Blogs from "./Pages/Blogs/Blogs";
+import Blog1 from "./Pages/Blogs/Blog1";
 import Contact from "./Pages/Contact";
 
 function App() {
@@ -23,7 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
-        {/* <Route path="/blogs" element={<Blogs />} /> */}
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/future-of-blow-molding" element={<Blog1 />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </HashRouter>
