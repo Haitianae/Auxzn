@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Auxzn/static/css/main.193b03b0.css",
+    "main.js": "/Auxzn/static/js/main.fedd3a0a.js",
+    "static/js/453.1ab6a46a.chunk.js": "/Auxzn/static/js/453.1ab6a46a.chunk.js",
+    "static/media/Auxzn banner.jpg": "/Auxzn/static/media/Auxzn banner.c0f09197c56dc0224630.jpg",
+    "static/media/Feeding and conveying.jpg": "/Auxzn/static/media/Feeding and conveying.f5e1fa79f7867b42d718.jpg",
+    "static/media/Dosing and mixing.jpg": "/Auxzn/static/media/Dosing and mixing.4bf5ba6d676a41065ea2.jpg",
+    "static/media/Heating and cooling.jpg": "/Auxzn/static/media/Heating and cooling.910e9309a8288f60ccf2.jpg",
+    "static/media/Hot runner system.jpg": "/Auxzn/static/media/Hot runner system.fbb137ecd2cdd26af4b9.jpg",
+    "static/media/Granulating and recycling.jpg": "/Auxzn/static/media/Granulating and recycling.81109d842da2d91d70a1.jpg",
+    "static/media/Automation system.jpg": "/Auxzn/static/media/Automation system.8d968689bcdfa4b83802.jpg",
+    "static/media/Parts.jpg": "/Auxzn/static/media/Parts.3ccaac9a29fc3cb86ff6.jpg",
+    "static/media/Central conveying and accessories.jpg": "/Auxzn/static/media/Central conveying and accessories.8bc58ef81072ebc88d3b.jpg",
+    "static/media/Auxznlogo.png": "/Auxzn/static/media/Auxznlogo.63d295bdbe1fc0b49eca.png",
+    "index.html": "/Auxzn/index.html",
+    "main.193b03b0.css.map": "/Auxzn/static/css/main.193b03b0.css.map",
+    "main.fedd3a0a.js.map": "/Auxzn/static/js/main.fedd3a0a.js.map",
+    "453.1ab6a46a.chunk.js.map": "/Auxzn/static/js/453.1ab6a46a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.193b03b0.css",
+    "static/js/main.fedd3a0a.js"
+  ]
+}
