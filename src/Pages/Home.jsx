@@ -62,16 +62,15 @@ export default function Home() {
       {/* Products Section */}
       <div className="container my-5">
         <div className="row mb-4">
-          <div className="col-12">
-            <h2 className="text-center auxznColor fw-bold">
-              Drying and Dehumidifying
+      <div className="text-center ">
+                            <span className="products-badge">OUR PRODUCTS</span>
+
+            <h2 className="text-center auxznColor fw-bold mt-3">
+              Explore Our Industrial Solutions
             </h2>
 
             <p className="text-center textColor">
-              Drying and dehumidifying series has been designed for drying
-              plastic materials with a stable low dew-point air below -40℃ with
-              the maximum drying capacity of up to 1,000kg per hour (in the case
-              of PET).
+            Explore a complete range of high-performance industrial solutions designed to optimize productivity, enhance precision, and power the future of smart manufacturing.
             </p>
           </div>
         </div>
@@ -117,7 +116,9 @@ export default function Home() {
           <FadeUp className="w-100">
             <div className="row mb-5">
               <div className="col-12 text-center">
-                <h2 className="auxznColor fw-bold">Why Choose Us ?</h2>
+                <span className="products-badge">WHY AUXZN</span>
+
+                <h2 className="auxznColor mt-3 fw-bold">Why Choose Us ?</h2>
 
                 <p className="textColor">
                   What drives us forward and shapes every partnership
@@ -148,7 +149,9 @@ export default function Home() {
           <FadeUp className="w-100">
             <div className="row mt-5 mb-4">
               <div className="col-12 text-center">
-                <h2 className="fw-bold auxznColor">Global Presence</h2>
+                <span className="products-badge">OUR GLOBAL PRESENCE</span>
+
+                <h2 className="fw-bold auxznColor mt-3">Global Presence</h2>
 
                 <p className="textColor">
                   Building trusted partnerships and delivering industrial

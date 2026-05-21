@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { NavLink, useLocation } from "react-router-dom";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 import "../App.css";
 
@@ -15,15 +15,40 @@ export default function Navbar() {
 
   const location = useLocation();
 
-  /* SCROLL TO TOP ON ROUTE CHANGE */
+  const collapseRef = useRef(null);
+
+  /* SCROLL TO TOP */
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+
+    setExpanded(false);
   }, [location.pathname]);
 
-  /* CLOSE MOBILE MENU */
+  /* CLICK OUTSIDE CLOSE */
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        expanded &&
+        collapseRef.current &&
+        !collapseRef.current.contains(event.target)
+      ) {
+        setExpanded(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutside
+      );
+    };
+  }, [expanded]);
+
   const closeMenu = () => {
     setExpanded(false);
   };
@@ -35,9 +60,14 @@ export default function Navbar() {
       expanded={expanded}
       className="app-navbar"
     >
-      <Container>
+      <Container ref={collapseRef}>
         {/* LOGO */}
-        <BsNavbar.Brand as={NavLink} to="/" className="app-navbar__brand">
+        <BsNavbar.Brand
+          as={NavLink}
+          to="/"
+          className="app-navbar__brand"
+          onClick={closeMenu}
+        >
           <img
             src={AuxznLogo}
             alt="AuxznLogo"
@@ -47,11 +77,11 @@ export default function Navbar() {
           />
         </BsNavbar.Brand>
 
-        {/* MOBILE TOGGLE */}
+        {/* TOGGLE */}
         <BsNavbar.Toggle
           aria-controls="main-navbar"
           className="app-navbar__toggle"
-          onClick={() => setExpanded(expanded ? false : true)}
+          onClick={() => setExpanded(!expanded)}
         />
 
         {/* NAVIGATION */}

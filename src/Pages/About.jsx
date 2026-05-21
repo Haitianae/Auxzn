@@ -37,9 +37,11 @@ export default function About() {
       />
       <FadeUp className="w-100">
         <div className="container-fluid mt-5 about-section p-5 rounded-5">
-          {/* HEADER */}
+          {/* HEADER */}  
           <div className="text-center mb-5">
-            <h1 className="auxznColor fw-bold">
+                          <span className="products-badge">ABOUT US</span>
+
+            <h1 className="auxznColor fw-bold mt-3">
               About{" "}
               <span>
                 <img
@@ -145,7 +147,8 @@ export default function About() {
         <div className="container mt-5 value-section">
           {/* HEADER */}
           <div className="text-center mb-5">
-            <h1 className="auxznColor fw-bold">About Our Values</h1>
+            <span className="products-badge">OUR VALUES</span>
+            <h1 className="auxznColor fw-bold mt-3">About Our Values</h1>
             <p className="textColor">
               The principles that drive our performance and growth
             </p>
@@ -213,8 +216,10 @@ export default function About() {
       <FadeUp className="w-100">
         <div className="container-fluid org-section mt-5">
           <div className="row">
-            <div className="col-12">
-              <h1 className="auxznColor fw-bold text-center">
+      <div className="text-center mb-5">
+              <span className="products-badge">OUR ORGANIZATION</span>
+
+              <h1 className="auxznColor fw-bold text-center mt-3">
                 About Our Organization
               </h1>
               <p className="textColor text-center">
@@ -283,9 +288,9 @@ export default function About() {
         </div>
       </FadeUp>
 
-    <FadeUp className="w-100">
-          <ContactComponent />
-        </FadeUp>
+      <FadeUp className="w-100">
+        <ContactComponent />
+      </FadeUp>
 
       {/* Footer */}
       <FadeUp className="w-100 mt-5">

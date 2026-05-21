@@ -7,6 +7,8 @@ import Products from "./Pages/Products/Products";
 import Blogs from "./Pages/Blogs/Blogs";
 import Blog1 from "./Pages/Blogs/Blog1";
 import Contact from "./Pages/Contact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
@@ -21,6 +23,21 @@ function App() {
         <Route path="/blogs/future-of-blow-molding" element={<Blog1 />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      {/* PREMIUM WHATSAPP BUTTON */}
+
+      <a
+        href="https://wa.me/919999999999"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-premium"
+      >
+        <span className="whatsapp-ping"></span>
+
+        <span className="whatsapp-tooltip">Chat With Us</span>
+
+        <FontAwesomeIcon icon={faWhatsapp} beat />
+      </a>
     </HashRouter>
   );
 }
