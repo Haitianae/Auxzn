@@ -22,11 +22,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../Components/Footer";
 import ContactComponent from "../../Components/ContactComponent";
+import { Link } from "react-router-dom";
 
 const products = [
   {
     img: Drying,
     title: "Drying and dehumidifying",
+    path: "/products/drying-and-dehumidifying",
   },
 
   {
@@ -132,13 +134,14 @@ export default function Products() {
                         Advanced industrial systems designed for high efficiency
                         and reliable manufacturing performance.
                       </p>
-                      <button className="product-page-btn">
+                      <Link to={product.path} className="product-page-btn">
+                        {" "}
                         Learn More
                         <FontAwesomeIcon
                           icon={faArrowRight}
                           className="product-btn-icon"
                         />
-                      </button>{" "}
+                      </Link>{" "}
                     </div>
                   </div>
                 </FadeUp>
@@ -275,9 +278,9 @@ export default function Products() {
         </section>
       </FadeUp>
       {/* CONTACT SECTION */}
-       <FadeUp className="w-100">
-             <ContactComponent />
-           </FadeUp>
+      <FadeUp className="w-100">
+        <ContactComponent />
+      </FadeUp>
 
       {/* Footer */}
       <FadeUp className="w-100 mt-5">
