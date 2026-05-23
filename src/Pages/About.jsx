@@ -37,9 +37,9 @@ export default function About() {
       />
       <FadeUp className="w-100">
         <div className="container-fluid mt-5 about-section p-5 rounded-5">
-          {/* HEADER */}  
+          {/* HEADER */}
           <div className="text-center mb-5">
-                          <span className="products-badge">ABOUT US</span>
+            <span className="products-badge">ABOUT US</span>
 
             <h1 className="auxznColor fw-bold mt-3">
               About{" "}
@@ -216,7 +216,7 @@ export default function About() {
       <FadeUp className="w-100">
         <div className="container-fluid org-section mt-5">
           <div className="row">
-      <div className="text-center mb-5">
+            <div className="text-center mb-5">
               <span className="products-badge">OUR ORGANIZATION</span>
 
               <h1 className="auxznColor fw-bold text-center mt-3">

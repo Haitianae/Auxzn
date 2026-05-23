@@ -23,6 +23,7 @@ import {
 import Footer from "../../Components/Footer";
 import ContactComponent from "../../Components/ContactComponent";
 import { Link } from "react-router-dom";
+import "../../App.css";
 
 const products = [
   {

@@ -3581,139 +3581,16 @@ ALL INPUT BLUE FOCUS
 }
 
 
-/* ===== PREMIUM DROPDOWN ===== */
 
-.app-navbar__dropdown .dropdown-menu {
-  border: none;
-  border-radius: 16px;
-  padding: 10px;
-  margin-top: 14px;
-  min-width: 220px;
-
-  background: #113156;
-  backdrop-filter: blur(12px);
-
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-  animation: dropdownFade 0.25s ease;
-}
-
-/* ENTRY ANIMATION */
-@keyframes dropdownFade {
-  from {
-    opacity: 0;
-    transform: translateY(10px) scale(0.97);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-/* ITEM STYLE */
-.app-navbar__dropdown .dropdown-item {
-  border-radius: 12px;
-  padding: 10px 14px;
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: #ffffff;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  transition: all 0.25s ease;
-}
-
-/* HOVER (SUBTLE, NOT BLOCKY) */
-.app-navbar__dropdown .dropdown-item:hover {
-  background: #ffffff;
-  color: #113156;
-  transform: translateX(4px);
-}
-
-/* ACTIVE */
-.app-navbar__dropdown .dropdown-item.active {
-  background: #d1343c;
-  color: white !important;
-}
-
-/* REMOVE BIG RED BLOCK FEEL */
-.app-navbar__dropdown .dropdown-item:not(:last-child) {
-  margin-bottom: 4px;
-}
-
-/* PRODUCTS MAIN MENU ACTIVE */
-
-.app-navbar__dropdown .dropdown-toggle {
-  position: relative;
-
-  font-weight: 500;
-  font-size: 0.95rem;
-
-  color: #4b5563 !important;
-
-  padding: 0.5rem 0.9rem !important;
-
-  border-radius: 8px;
-
-  transition:
-    color 0.2s ease,
-    background-color 0.2s ease;
-}
-
-/* UNDERLINE */
-
-.app-navbar__dropdown .dropdown-toggle::before {
-  content: "";
-
-  position: absolute;
-
-  left: 50%;
-  bottom: 4px;
-
-  transform: translateX(-50%);
-
-  width: 0;
-
-  height: 2px;
-
-  border-radius: 2px;
-
-  background: #d1343c;
-
-  transition: width 0.25s ease;
-}
-
-/* HOVER */
-
-.app-navbar__dropdown .dropdown-toggle:hover {
-  color: #d1343c !important;
-}
-
-.app-navbar__dropdown .dropdown-toggle:hover::before {
-  width: 70%;
-}
-
-/* ACTIVE */
-
-.app-navbar__dropdown--active .dropdown-toggle {
-  color: #d1343c !important;
-}
-
-.app-navbar__dropdown--active .dropdown-toggle::before {
-  width: 70%;
-}
-
-/* ACTIVE ARROW */
-
-.app-navbar__dropdown--active .dropdown-toggle::after {
-  border-top-color: #d1343c !important;
-} 
 
 
 /* =========================
-   PRODUCT 1 PAGE - FINAL MATCHED DESIGN
+   PRODUCT 1 PAGE 
 ========================= */
+
+.background-contaniner{
+  background-color: rgba(17, 49, 86, 0.08);
+}
 
 /* SECTION BACKGROUND */
 .industrial-product-section {
@@ -3723,16 +3600,8 @@ ALL INPUT BLUE FOCUS
   overflow: hidden;
 }
 
-/* subtle grid (same feel as contact section) */
 .industrial-product-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(17, 49, 86, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(17, 49, 86, 0.04) 1px, transparent 1px);
-  background-size: 30px 30px;
-  pointer-events: none;
+  display: none;
 }
 
 /* =========================
@@ -3743,8 +3612,6 @@ ALL INPUT BLUE FOCUS
   background: #ffffff;
   border-radius: 28px;
   padding: 50px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
   overflow: hidden;
   transition: all 0.35s ease;
 }
@@ -3831,7 +3698,6 @@ ALL INPUT BLUE FOCUS
 .industrial-product-image {
   width: 100%;
   border-radius: 24px;
-  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.18);
   transition: transform 0.4s ease;
 }
 
@@ -3843,7 +3709,42 @@ ALL INPUT BLUE FOCUS
    FEATURES
 ========================= */
 .industrial-features-section {
+  position: relative;
   margin-top: 110px;
+  padding: 80px 40px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+}
+
+/* GRID ONLY FOR FEATURES SECTION */
+.industrial-features-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(17, 49, 86, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 49, 86, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+}
+
+/* ABSTRACT GLOW */
+.industrial-features-section::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: rgba(209, 52, 60, 0.08);
+  border-radius: 50%;
+  filter: blur(80px);
+  top: -120px;
+  right: -120px;
+}
+
+/* CONTENT ABOVE BG */
+.industrial-features-section > * {
+  position: relative;
+  z-index: 2;
 }
 
 .industrial-section-title {
@@ -3852,55 +3753,93 @@ ALL INPUT BLUE FOCUS
   color: #113156;
 }
 
-/* FEATURE CARD */
+/* =========================
+   FEATURE CARD
+========================= */
+
 .feature-box {
   position: relative;
-  background: white;
-  border-radius: 22px;
-  padding: 24px;
-  border: 1px solid #e5e7eb;
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  transition: all 0.35s ease;
+
+  background: #fff;
+
+  border-radius: 24px;
+
+  padding: 30px;
+
   height: 100%;
+  min-height: 250px;
+
+  border: 1px solid #e5e7eb;
+
+  transition: all 0.35s ease;
+
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.05);
 }
 
-/* top red line animation */
-.feature-box::before {
+
+/* LEFT BORDER ACCENT */
+.feature-box::after {
   content: "";
+
   position: absolute;
-  top: 0;
+
+  top: 30px;
   left: 0;
-  height: 4px;
-  width: 100%;
+
+  width: 4px;
+  height: 60px;
+
   background: #d1343c;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: 0.35s ease;
+
+  border-radius: 20px;
 }
 
-.feature-box:hover::before {
-  transform: scaleX(1);
-}
-
+/* HOVER */
 .feature-box:hover {
   transform: translateY(-8px);
-  border-color: #d1343c;
-  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+
+  border-color: rgba(209,52,60,0.25);
+
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.10);
 }
 
-.feature-icon {
+/* NUMBER */
+.feature-number {
+  font-size: 3rem;
+  font-weight: 800;
+
   color: #d1343c;
-  font-size: 18px;
-  margin-top: 5px;
+
+  line-height: 1;
+
+  margin-bottom: 22px;
+
+
+  letter-spacing: -2px;
 }
 
+/* TEXT */
 .feature-box p {
-  color: #6b7280;
-  line-height: 1.8;
+  color: #4b5563;
+
+  line-height: 1.9;
+
+  margin: 0;
+
+  position: relative;
+  z-index: 2;
+
+  flex-grow: 1;
 }
+
+
 
 /* =========================
    APPLICATION SECTION
@@ -4229,6 +4168,10 @@ ALL INPUT BLUE FOCUS
 
     padding: 8px 14px;
   }
+
+
+
+
 }
 
 @media (max-width: 576px) {

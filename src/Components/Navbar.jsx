@@ -1,9 +1,4 @@
-import {
-  Navbar as BsNavbar,
-  Nav,
-  Container,
-  NavDropdown,
-} from "react-bootstrap";
+import { Navbar as BsNavbar, Nav, Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -99,32 +94,14 @@ export default function Navbar() {
               Home
             </Nav.Link>
 
-      <NavDropdown
-  title="Products"
-  id="products-dropdown"
-  className={`app-navbar__dropdown text-center text-lg-start ${
-    location.pathname.startsWith("/products")
-      ? "app-navbar__dropdown--active"
-      : ""
-  }`}
->
-              <NavDropdown.Item
-                as={NavLink}
-                to="/products"
-                end
-                onClick={closeMenu}
-              >
-                All Products
-              </NavDropdown.Item>
-
-              <NavDropdown.Item
-                as={NavLink}
-                to="/products/drying-and-dehumidifying"
-                onClick={closeMenu}
-              >
-                Product 1
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link
+              as={NavLink}
+              to="/products"
+              onClick={closeMenu}
+              className="app-navbar__link text-center text-lg-start"
+            >
+              Products
+            </Nav.Link>
 
             <Nav.Link
               as={NavLink}
