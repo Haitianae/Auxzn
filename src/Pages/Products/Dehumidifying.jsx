@@ -19,6 +19,9 @@ import {
   faMicrochip,
   faGlobe,
   faGears,
+  faWind,
+  faTemperatureLow,
+  faBolt,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Footer from "../../Components/Footer";
@@ -95,15 +98,13 @@ export default function Dehumidifying() {
 
       {/* PRODUCTS SECTION */}
       <section className="dehumidifying-products-section mt-5">
-      
-
         <div className="container">
           {/* HEADER */}
-          <FadeUp className="w-100">
+          <FadeUp className="w-100 ">
             <div className="text-center mb-5">
-        
-
-              <span className="dehumidifying-badge mt-5">DRYING AND DEHUMIDIFYING</span>
+              <span className="dehumidifying-bluebadge mt-5">
+                DRYING AND DEHUMIDIFYING
+              </span>
 
               <h1 className="auxznColor fw-bold mt-3">
                 Drying and Dehumidifying Solutions
@@ -118,7 +119,7 @@ export default function Dehumidifying() {
           </FadeUp>
 
           {/* CARDS */}
-          <div className="row g-4 justify-content-center">
+          <div className="row g-4 justify-content-center pb-5 mb-3">
             {products.map((product, index) => (
               <div key={index} className="col-12 col-sm-6 col-lg-4">
                 <FadeUp delay={index * 0.08} className="h-100">
@@ -153,94 +154,95 @@ export default function Dehumidifying() {
       </section>
 
       {/* WHY AUXZN */}
-    <FadeUp className="w-100">
-  <section className="dh-section py-5">
-    <div className="container">
-
-      {/* HEADER */}
-      <div className="dh-header text-center mb-5">
-        <h2 className="dh-title">
-          Drying & Dehumidifying Systems
-        </h2>
-
-        <p className="dh-subtitle">
-          Reliable moisture control solutions designed to improve material quality,
-          eliminate defects, and ensure consistent production performance.
-        </p>
-      </div>
-
-      <div className="row align-items-center">
-
-        {/* LEFT CONTENT */}
-        <div className="col-lg-6">
-          <div className="dh-content">
-
-            <h3>
-              Built for Precision Material Processing
-            </h3>
-
-            <p>
-              Moisture in raw materials leads to defects like bubbles,
-              cracks, and poor surface finish. Our dehumidifying systems
-              ensure controlled drying conditions for stable and
-              high-quality output.
-            </p>
-
-            <div className="dh-features">
-
-              <div className="dh-feature">
-                <FontAwesomeIcon icon={faGear} />
-                <span>Stable low dew point drying</span>
-              </div>
-
-              <div className="dh-feature">
-                <FontAwesomeIcon icon={faMicrochip} />
-                <span>Automated temperature control</span>
-              </div>
-
-              <div className="dh-feature">
-                <FontAwesomeIcon icon={faGlobe} />
-                <span>Energy-efficient operation</span>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-        {/* RIGHT STATS */}
-        <div className="col-lg-6">
-          <div className="dh-stats-box">
-
-            <div className="dh-stat">
-              <h4>-40°C</h4>
-              <p>Dew Point</p>
-            </div>
-
-            <div className="dh-stat">
-              <h4>30%</h4>
-              <p>Energy Saving</p>
-            </div>
-
-            <div className="dh-stat">
-              <h4>24/7</h4>
-              <p>Continuous Operation</p>
-            </div>
-
-            <div className="dh-stat">
-              <h4>High</h4>
-              <p>Material Consistency</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-</FadeUp>
-
       <FadeUp className="w-100">
+        <div className=" container-fluid dhx-section  pb-5">
+          {/* ABSTRACT BACKGROUNDS */}
+          <div className="dhx-bg-circle"></div>
+          <div className="dhx-bg-grid"></div>
+
+          <div className="container mt-5">
+            {/* HEADER */}
+            <div className="text-center dhx-header">
+              <span className="dhx-badge">INDUSTRIAL DRYING SOLUTIONS</span>
+
+              <h1 className="dhx-title mt-3">Drying & Dehumidifying Systems</h1>
+
+              <p className="dhx-subtitle">
+                Precision-engineered moisture control systems designed to
+                deliver consistent quality, reduce defects, and optimize energy
+                usage.
+              </p>
+            </div>
+
+            <div className="row align-items-center">
+              {/* LEFT SIDE */}
+         
+
+              {/* RIGHT SIDE */}
+              <div className="col-lg-6 mt-5">
+                <div className="dhx-card">
+                  <div className="dhx-main">
+                    <h2>Moisture Control</h2>
+                    <p>Precision Dehumidification Systems</p>
+                  </div>
+
+                  <div className="dhx-grid">
+                    <div className="dhx-box">
+                      <h4>Low Humidity</h4>
+                      <span>Prevents material defects</span>
+                    </div>
+
+                    <div className="dhx-box">
+                      <h4>Uniform Drying</h4>
+                      <span>Consistent material quality</span>
+                    </div>
+
+                    <div className="dhx-box">
+                      <h4>Energy Efficient</h4>
+                      <span>Reduced power consumption</span>
+                    </div>
+
+                    <div className="dhx-box">
+                      <h4>Smart Control</h4>
+                      <span>Automated process control</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                   <div className="col-lg-6 mt-5 mb-lg-0">
+                <div className="dhx-left">
+                  <h2>Engineered for High-Performance Material Processing</h2>
+
+                  <p>
+                    Moisture contamination can compromise product strength and
+                    appearance. Our systems ensure stable drying environments
+                    with intelligent controls and energy-efficient performance.
+                  </p>
+
+                  <div className="dhx-features">
+                    <div className="dhx-feature">
+                      <FontAwesomeIcon icon={faWind} />
+                      <span>Effective moisture removal system</span>
+                    </div>
+
+                    <div className="dhx-feature">
+                      <FontAwesomeIcon icon={faTemperatureLow} />
+                      <span>Controlled drying temperature</span>
+                    </div>
+
+                    <div className="dhx-feature">
+                      <FontAwesomeIcon icon={faBolt} />
+                      <span>Energy-efficient operation</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </FadeUp>
+
+      <FadeUp className="w-100 ">
         <ContactComponent />
       </FadeUp>
 
