@@ -9,7 +9,7 @@ import Blog1 from "./Pages/Blogs/Blog1";
 import Contact from "./Pages/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import Product1 from "./Pages/Products/Product1";
+import StandardHopperDryer from "./Pages/Products/Dehumidifier product sub pages/StandardHopperDryer";
 import Dehumidifying from "./Pages/Products/Dehumidifying";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/drying-and-dehumidifying" element={<Dehumidifying />} />
-                <Route path="/products/product1" element={<Product1 />} />
+                <Route path="/products/standard-hopper-dryer" element={<StandardHopperDryer />} />
 
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/future-of-blow-molding" element={<Blog1 />} />

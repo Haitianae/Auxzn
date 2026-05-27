@@ -4589,6 +4589,67 @@ SMALL CARD
   color: #113156;
 }
 
+/* =========================
+   BREADCRUMB
+========================= */
+
+.auxzn-breadcrumb-wrapper {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px 0;
+}
+
+.auxzn-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 6px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.auxzn-breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* HOME ICON */
+.auxzn-breadcrumb-home {
+  color: #113156;
+  font-size: 0.8rem;
+  margin-top: -1px;
+}
+
+/* LINKS */
+.auxzn-breadcrumb a {
+  text-decoration: none;
+  color: #113156;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.auxzn-breadcrumb a:hover {
+  color: #d1343c;
+}
+
+/* ACTIVE PAGE */
+.auxzn-breadcrumb .active {
+  color: #d1343c;
+  font-weight: 600;
+}
+
+/* SEPARATOR */
+.auxzn-breadcrumb-separator {
+  font-size: 0.62rem;
+  color: #9ca3af;
+  margin: 0 2px;
+}
+
+
+
+
+
 @media (max-width: 1024px) {
   .about-section::before {
     content: "";
@@ -4870,6 +4931,31 @@ SMALL CARD
   .dhx-box {
   text-align: center;
 }
+
+
+
+  .auxzn-breadcrumb-wrapper {
+    padding: 10px 0;
+  }
+
+  .auxzn-breadcrumb {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  .auxzn-breadcrumb-item {
+    gap: 5px;
+  }
+
+  .auxzn-breadcrumb-home {
+    font-size: 0.7rem;
+  }
+
+  .auxzn-breadcrumb-separator {
+    font-size: 0.5rem;
+    margin: 0 1px;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -5045,4 +5131,9 @@ SMALL CARD
 .dhx-box {
   text-align: center;
 }
+
+  .auxzn-breadcrumb {
+    font-size: 0.82rem;
+  }
+
 }

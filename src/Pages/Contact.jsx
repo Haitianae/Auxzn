@@ -26,7 +26,9 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
 
   const GAS_URL =
-    "https://script.google.com/macros/s/AKfycbzYzIGuEZUg2l6BQp-vf6XH34WAxbh1XLz2TyxjEnVd9uiPVotrVWkkn1G7GM8Ro4xK/exec";
+    "https://script.google.com/macros/s/AKfycbzrIhCXJJDGYpC1iCs7PVJRpFXOQ98ZlqKOU_CL3wDC11zfXkWItO2ABM1w7FrhkJBZ/exec";
+
+    
 
   /* FORM SUBMIT */
   const handleSubmit = async (values) => {
@@ -79,31 +81,29 @@ export default function Contact() {
       /* SUCCESS */
       if (data.success) {
         notification.success({
+          message: (
+            <span
+              style={{
+                color: "#113156",
+                fontWeight: 700,
+              }}
+            >
+              Message Sent
+            </span>
+          ),
 
-  message: (
-    <span
-      style={{
-        color: "#113156",
-        fontWeight: 700,
-      }}
-    >
-      Message Sent
-    </span>
-  ),
+          description: (
+            <span
+              style={{
+                color: "#113156",
+              }}
+            >
+              Your message has been submitted successfully.
+            </span>
+          ),
 
-  description: (
-    <span
-      style={{
-        color: "#113156",
-      }}
-    >
-      Your message has been submitted successfully.
-    </span>
-  ),
-
-  placement: "bottomRight",
-
-});
+          placement: "bottomRight",
+        });
 
         form.resetFields();
       } else {
@@ -112,32 +112,30 @@ export default function Contact() {
     } catch (error) {
       console.log(error);
 
-    notification.error({
+      notification.error({
+        message: (
+          <span
+            style={{
+              color: "#d1343c",
+              fontWeight: 700,
+            }}
+          >
+            Submission Failed
+          </span>
+        ),
 
-  message: (
-    <span
-      style={{
-        color: "#d1343c",
-        fontWeight: 700,
-      }}
-    >
-      Submission Failed
-    </span>
-  ),
+        description: (
+          <span
+            style={{
+              color: "#113156",
+            }}
+          >
+            Something went wrong. Please try again.
+          </span>
+        ),
 
-  description: (
-    <span
-      style={{
-        color: "#113156",
-      }}
-    >
-      Something went wrong. Please try again.
-    </span>
-  ),
-
-  placement: "bottomRight",
-
-});
+        placement: "bottomLeft",
+      });
     } finally {
       setLoading(false);
     }
@@ -365,15 +363,14 @@ export default function Contact() {
                               message: "Please enter phone number",
                             },
                             {
-                              pattern: /^[0-9]{10,15}$/,
-                              message:
-                                "Phone number must contain minimum 10 digits",
+                              pattern: /^[+0-9\s]{10,20}$/,
+                              message: "Please enter a valid phone number",
                             },
                           ]}
                         >
                           <Input
                             placeholder="Enter phone number"
-                            maxLength={15}
+                            maxLength={20}
                           />
                         </Form.Item>
                       </div>
@@ -404,9 +401,18 @@ export default function Contact() {
                           required: true,
                           message: "Please enter your message",
                         },
+                        {
+                          max: 300,
+                          message: "Message cannot exceed 200 characters",
+                        },
                       ]}
                     >
-                      <TextArea rows={5} placeholder="Write your message..." />
+                      <TextArea
+                        rows={5}
+                        maxLength={300}
+                        showCount
+                        placeholder="Write your message..."
+                      />
                     </Form.Item>
                     {/* BUTTON */}
                     <Button

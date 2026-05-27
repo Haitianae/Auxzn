@@ -24,6 +24,8 @@ import Footer from "../../Components/Footer";
 import ContactComponent from "../../Components/ContactComponent";
 import { Link } from "react-router-dom";
 import "../../App.css";
+import Breadcrumbs from "../../Components/Breadcrumbs";
+
 
 const products = [
   {
@@ -81,7 +83,12 @@ export default function Products() {
         className="img-fluid w-100 rounded-bottom-5"
         alt="auxzn banner"
       />
-
+<Breadcrumbs
+  items={[
+    { label: "Home", link: "/" },
+    { label: "Products" },
+  ]}
+/>
       {/* PRODUCTS SECTION */}
       <section className="products-page-section py-5">
         <div className="products-floating-gear">

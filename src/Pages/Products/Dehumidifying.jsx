@@ -29,12 +29,13 @@ import ContactComponent from "../../Components/ContactComponent";
 import { Link } from "react-router-dom";
 
 import "../../App.css";
+import Breadcrumbs from "../../Components/Breadcrumbs";
 
 const products = [
   {
     img: Drying,
     title: "Drying and dehumidifying",
-    path: "/products/product1",
+    path: "/products/standard-hopper-dryer",
     desc: "Comprehensive drying and dehumidifying systems designed to maintain material integrity and ensure consistent production quality.",
   },
   {
@@ -95,6 +96,13 @@ export default function Dehumidifying() {
         className="img-fluid w-100 dehumidifying-banner"
         alt="auxzn banner"
       />
+      <Breadcrumbs
+  items={[
+    { label: "Home", link: "/" },
+    { label: "Products", link: "/products" },
+    { label: "Drying & Dehumidifying" },
+  ]}
+/>
 
       {/* PRODUCTS SECTION */}
       <section className="dehumidifying-products-section mt-5">

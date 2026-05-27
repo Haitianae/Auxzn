@@ -1,14 +1,15 @@
 import React from "react";
-import FadeUp from "../../Components/FadeUp";
-import Banner from "../../Assets/Images/Auxzn banner.jpg";
-import Drying from "../../Assets/Images/Products images/Drying and dehumidifying.jpg";
+import FadeUp from "../../../Components/FadeUp";
+import Banner from "../../../Assets/Images/Auxzn banner.jpg";
+import Drying from "../../../Assets/Images/Products images/Drying and dehumidifying.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../../Components/Footer";
-import ContactComponent from "../../Components/ContactComponent";
-import "../../App.css";
+import Footer from "../../../Components/Footer";
+import ContactComponent from "../../../Components/ContactComponent";
+import "../../../App.css";
+import Breadcrumbs from "../../../Components/Breadcrumbs";
 
-export default function Product1() {
+export default function StandardHopperDryer() {
   return (
     <div className="container-fluid m-0 p-0 background-contaniner">
       {/* BANNER */}
@@ -17,7 +18,14 @@ export default function Product1() {
         className="img-fluid w-100 rounded-bottom-5"
         alt="banner"
       />
-
+<Breadcrumbs
+  items={[
+    { label: "Home", link: "/" },
+    { label: "Products", link: "/products" },
+    { label: "Drying & Dehumidifying", link: "/products/drying-and-dehumidifying" },
+    { label: "Standard Hopper Dryer SHD-E" },
+  ]}
+/>
       <div className="container mt-5">
         <FadeUp width={100}>
           {/* HERO */}
