@@ -136,7 +136,7 @@ export default function StandardHopperDryer() {
 
               <div className="col-lg-5">
                 <div className="industrial-side-card">
-                  <h4>Industry Applications</h4>
+                  <h4  className="fw-bold">Industry Applications</h4>
                   <ul className="mt-3">
                     <li>Plastic Injection Molding</li>
                     <li>ABS Material Drying</li>

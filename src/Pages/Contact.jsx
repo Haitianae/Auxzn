@@ -26,9 +26,7 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
 
   const GAS_URL =
-    "https://script.google.com/macros/s/AKfycbzrIhCXJJDGYpC1iCs7PVJRpFXOQ98ZlqKOU_CL3wDC11zfXkWItO2ABM1w7FrhkJBZ/exec";
-
-    
+    "https://script.google.com/macros/s/AKfycbz5ce_XFHozZgM4cCNpkE_u9wRQiAD7MPRup_wKMsIyleNv2VlQmvqUpoH6FTPb3I7L/exec";
 
   /* FORM SUBMIT */
   const handleSubmit = async (values) => {
@@ -110,7 +108,6 @@ export default function Contact() {
         throw new Error(data.error || "Submission failed");
       }
     } catch (error) {
-      console.log(error);
 
       notification.error({
         message: (
@@ -403,7 +400,7 @@ export default function Contact() {
                         },
                         {
                           max: 300,
-                          message: "Message cannot exceed 200 characters",
+                          message: "Message cannot exceed 300 characters",
                         },
                       ]}
                     >

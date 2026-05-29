@@ -41,7 +41,7 @@ function App() {
 
         <span className="whatsapp-tooltip">Chat With Us</span>
 
-        <FontAwesomeIcon icon={faWhatsapp} beat />
+        <FontAwesomeIcon icon={faWhatsapp} beatFade />
       </a>
     </HashRouter>
   );

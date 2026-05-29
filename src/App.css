@@ -3759,7 +3759,7 @@ ALL INPUT BLUE FOCUS
 .feature-box {
   position: relative;
 
-  background: #fff;
+  background: #113156;
 
   border-radius: 24px;
 
@@ -3779,6 +3779,7 @@ ALL INPUT BLUE FOCUS
 
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
 }
+
 
 /* LEFT BORDER ACCENT */
 .feature-box::after {
@@ -3801,7 +3802,6 @@ ALL INPUT BLUE FOCUS
 .feature-box:hover {
   transform: translateY(-8px);
 
-  border-color: rgba(209, 52, 60, 0.25);
 
   box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1);
 }
@@ -3822,7 +3822,7 @@ ALL INPUT BLUE FOCUS
 
 /* TEXT */
 .feature-box p {
-  color: #4b5563;
+  color: white;
 
   line-height: 1.9;
 
