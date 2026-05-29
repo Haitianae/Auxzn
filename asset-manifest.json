@@ -1,8 +1,16 @@
 {
   "files": {
-    "main.css": "/Auxzn/static/css/main.193b03b0.css",
-    "main.js": "/Auxzn/static/js/main.fedd3a0a.js",
+    "main.css": "/Auxzn/static/css/main.46fd4d3e.css",
+    "main.js": "/Auxzn/static/js/main.63da9ce7.js",
     "static/js/453.1ab6a46a.chunk.js": "/Auxzn/static/js/453.1ab6a46a.chunk.js",
+    "static/media/Drying Loaders.jpg": "/Auxzn/static/media/Drying Loaders.3606850553172ad1d75c.jpg",
+    "static/media/Compressed Air Dryers.jpg": "/Auxzn/static/media/Compressed Air Dryers.4728d5aae10983985e45.jpg",
+    "static/media/Standard Drying.jpg": "/Auxzn/static/media/Standard Drying.225785469a83a6095ad0.jpg",
+    "static/media/Cabinet Dryers.jpg": "/Auxzn/static/media/Cabinet Dryers.623f60d2e65ff7b62501.jpg",
+    "static/media/HoneyComb_Dehumidifiers.jpg": "/Auxzn/static/media/HoneyComb_Dehumidifiers.0a2d7c6c35e25c245543.jpg",
+    "static/media/Energy-efficient.jpg": "/Auxzn/static/media/Energy-efficient.2bd8bfc2ea43bb35dd09.jpg",
+    "static/media/Energy-saving.jpg": "/Auxzn/static/media/Energy-saving.35bc563c28ca63256753.jpg",
+    "static/media/Hopper Dryers.jpg": "/Auxzn/static/media/Hopper Dryers.35bc563c28ca63256753.jpg",
     "static/media/Auxzn banner.jpg": "/Auxzn/static/media/Auxzn banner.c0f09197c56dc0224630.jpg",
     "static/media/Feeding and conveying.jpg": "/Auxzn/static/media/Feeding and conveying.f5e1fa79f7867b42d718.jpg",
     "static/media/Dosing and mixing.jpg": "/Auxzn/static/media/Dosing and mixing.4bf5ba6d676a41065ea2.jpg",
@@ -14,12 +22,12 @@
     "static/media/Central conveying and accessories.jpg": "/Auxzn/static/media/Central conveying and accessories.8bc58ef81072ebc88d3b.jpg",
     "static/media/Auxznlogo.png": "/Auxzn/static/media/Auxznlogo.63d295bdbe1fc0b49eca.png",
     "index.html": "/Auxzn/index.html",
-    "main.193b03b0.css.map": "/Auxzn/static/css/main.193b03b0.css.map",
-    "main.fedd3a0a.js.map": "/Auxzn/static/js/main.fedd3a0a.js.map",
+    "main.46fd4d3e.css.map": "/Auxzn/static/css/main.46fd4d3e.css.map",
+    "main.63da9ce7.js.map": "/Auxzn/static/js/main.63da9ce7.js.map",
     "453.1ab6a46a.chunk.js.map": "/Auxzn/static/js/453.1ab6a46a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.193b03b0.css",
-    "static/js/main.fedd3a0a.js"
+    "static/css/main.46fd4d3e.css",
+    "static/js/main.63da9ce7.js"
   ]
 }
