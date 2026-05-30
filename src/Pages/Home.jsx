@@ -136,7 +136,7 @@ export default function Home() {
                       {value.icon}
                     </div>
 
-                    <h3 className="h3 fw-bold mb-3">{value.title}</h3>
+                    <h3 className="h4 fw-bold mb-3">{value.title}</h3>
 
                     <p className="mb-0 textColor">{value.desc}</p>
                   </div>

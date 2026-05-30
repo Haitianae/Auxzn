@@ -60,9 +60,9 @@ export default function Blogs() {
               OUR BLOGS
             </span>
 
-            <h1 className="blogs-heading mt-3">
+            <h2 className="blogs-heading mt-3">
               Latest Insights & Articles
-            </h1>
+            </h2>
 
             <p className="blogs-description mx-auto">
               Explore the latest industrial insights,

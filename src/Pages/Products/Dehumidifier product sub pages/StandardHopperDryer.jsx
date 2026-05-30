@@ -34,9 +34,9 @@ export default function StandardHopperDryer() {
               <div className="col-lg-6">
                 <span className="industrial-badge">HOPPER DRYER</span>
 
-                <h1 className="industrial-title">
+                <h2 className="industrial-title">
                   Standard Hopper Dryer SHD-E
-                </h1>
+                </h2>
 
                 <p className="industrial-description">
                   SHD-E hopper dryers are used for drying hygroscopic plastics,

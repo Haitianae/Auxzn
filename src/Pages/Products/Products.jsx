@@ -137,7 +137,7 @@ export default function Products() {
 
                     {/* CONTENT */}
                     <div className="product-page-content">
-                      <h3>{product.title}</h3>
+                      <h5 className="auxznColor fw-bold">{product.title}</h5>
                       <p>
                         Advanced industrial systems designed for high efficiency
                         and reliable manufacturing performance.

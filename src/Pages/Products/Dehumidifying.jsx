@@ -114,9 +114,9 @@ export default function Dehumidifying() {
                 DRYING AND DEHUMIDIFYING
               </span>
 
-              <h1 className="auxznColor fw-bold mt-3">
+              <h2 className="auxznColor fw-bold mt-3">
                 Drying and Dehumidifying Solutions
-              </h1>
+              </h2>
 
               <p className="dehumidifying-description mx-auto">
                 Discover our advanced range of drying and dehumidifying systems
@@ -141,7 +141,7 @@ export default function Dehumidifying() {
                     </div>
 
                     <div className="dehumidifying-content">
-                      <h3>{product.title}</h3>
+                      <h5 className="fw-bold auxznColor">{product.title}</h5>
 
                       <p>{product.desc}</p>
 
@@ -173,7 +173,7 @@ export default function Dehumidifying() {
             <div className="text-center dhx-header">
               <span className="dhx-badge">INDUSTRIAL DRYING SOLUTIONS</span>
 
-              <h1 className="dhx-title mt-3">Drying & Dehumidifying Systems</h1>
+              <h2 className="dhx-title mt-3">Drying & Dehumidifying Systems</h2>
 
               <p className="dhx-subtitle">
                 Precision-engineered moisture control systems designed to
@@ -190,7 +190,7 @@ export default function Dehumidifying() {
               <div className="col-lg-6 mt-5">
                 <div className="dhx-card">
                   <div className="dhx-main">
-                    <h2>Moisture Control</h2>
+                    <h2 className="h3">Moisture Control</h2>
                     <p>Precision Dehumidification Systems</p>
                   </div>
 
@@ -219,7 +219,7 @@ export default function Dehumidifying() {
               </div>
                    <div className="col-lg-6 mt-5 mb-lg-0">
                 <div className="dhx-left">
-                  <h2>Engineered for High-Performance Material Processing</h2>
+                  <h2 className="h3">Engineered for High-Performance Material Processing</h2>
 
                   <p>
                     Moisture contamination can compromise product strength and

@@ -53,10 +53,10 @@ export default function Blog1() {
           <div className="blogpage1-header text-center">
             <span className="blogs-badge">AUXZN INDUSTRIAL BLOG</span>
 
-            <h1 className="blogpage1-title mt-4">
+            <h2 className="blogpage1-title mt-4">
               What Is a Blow Molding Machine? A Complete Guide for the Plastic
               Industry
-            </h1>
+            </h2>
 
             <p className="blogpage1-subtitle mx-auto">
               Explore how modern blow molding technology is transforming the

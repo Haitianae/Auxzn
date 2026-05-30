@@ -41,7 +41,7 @@ export default function About() {
           <div className="text-center mb-5">
             <span className="products-badge">ABOUT US</span>
 
-            <h1 className="auxznColor fw-bold mt-3">
+            <h2 className="auxznColor fw-bold mt-3">
               About{" "}
               <span>
                 <img
@@ -50,7 +50,7 @@ export default function About() {
                   alt="Auxzn logo"
                 />
               </span>
-            </h1>
+            </h2>
             <p className="textColor  about-subtext">
               Driving industrial innovation with precision, reliability, and
               smart automation solutions.
@@ -63,10 +63,10 @@ export default function About() {
               <div className="about-main-card">
                 <span className="about-tag">Who We Are</span>
 
-                <h2>
+                <h3 className="fw-bold auxznColor">
                   Engineering Excellence <br />
                   for Modern Manufacturing
-                </h2>
+                </h3>
 
                 <p>
                   Auxzn Machinery delivers{" "}
@@ -148,7 +148,7 @@ export default function About() {
           {/* HEADER */}
           <div className="text-center mb-5">
             <span className="products-badge">OUR VALUES</span>
-            <h1 className="auxznColor fw-bold mt-3">About Our Values</h1>
+            <h2 className="auxznColor fw-bold mt-3">About Our Values</h2>
             <p className="textColor">
               The principles that drive our performance and growth
             </p>
@@ -219,25 +219,25 @@ export default function About() {
             <div className="text-center mb-5">
               <span className="products-badge">OUR ORGANIZATION</span>
 
-              <h1 className="auxznColor fw-bold text-center mt-3">
+              <h2 className="auxznColor fw-bold text-center mt-3">
                 About Our Organization
-              </h1>
+              </h2>
               <p className="textColor text-center">
                 Delivering quality, innovation, and reliable solutions for
                 sustainable growth.
               </p>
             </div>
           </div>
-          <section className="mt-5">
+          <section className="mt-3">
             <div className="container">
               <div className="row align-items-center">
                 {/* LEFT SIDE */}
                 <div className="col-lg-6">
-                  <h4 className="org-title">
+                  <h3 className="org-title">
                     Global Engineering.
                     <br />
                     Local Expertise.
-                  </h4>
+                  </h3>
 
                   <p className="org-text">
                     At Auzxn, we are committed to delivering innovative,
@@ -260,21 +260,21 @@ export default function About() {
                       <div className="container">
                         <div className="stats-wrapper">
                           <div className="stat-item">
-                            <h1>{on && <CountUp end={50} duration={2} />}+</h1>
+                            <h2>{on && <CountUp end={50} duration={2} />}+</h2>
                             <p>Years Experience</p>
                           </div>
 
                           <div className="stat-divider"></div>
 
                           <div className="stat-item">
-                            <h1>{on && <CountUp end={13} duration={2} />}+</h1>
+                            <h2>{on && <CountUp end={13} duration={2} />}+</h2>
                             <p>Global Offices</p>
                           </div>
 
                           <div className="stat-divider"></div>
 
                           <div className="stat-item">
-                            <h1>{on && <CountUp end={80} duration={2} />}+</h1>
+                            <h2>{on && <CountUp end={80} duration={2} />}+</h2>
                             <p>Countries Served</p>
                           </div>
                         </div>
