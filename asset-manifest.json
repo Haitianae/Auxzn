@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Auxzn/static/css/main.46fd4d3e.css",
-    "main.js": "/Auxzn/static/js/main.63da9ce7.js",
+    "main.css": "/Auxzn/static/css/main.64d7d9a5.css",
+    "main.js": "/Auxzn/static/js/main.2a59290a.js",
     "static/js/453.1ab6a46a.chunk.js": "/Auxzn/static/js/453.1ab6a46a.chunk.js",
     "static/media/Drying Loaders.jpg": "/Auxzn/static/media/Drying Loaders.3606850553172ad1d75c.jpg",
     "static/media/Compressed Air Dryers.jpg": "/Auxzn/static/media/Compressed Air Dryers.4728d5aae10983985e45.jpg",
@@ -22,12 +22,12 @@
     "static/media/Central conveying and accessories.jpg": "/Auxzn/static/media/Central conveying and accessories.8bc58ef81072ebc88d3b.jpg",
     "static/media/Auxznlogo.png": "/Auxzn/static/media/Auxznlogo.63d295bdbe1fc0b49eca.png",
     "index.html": "/Auxzn/index.html",
-    "main.46fd4d3e.css.map": "/Auxzn/static/css/main.46fd4d3e.css.map",
-    "main.63da9ce7.js.map": "/Auxzn/static/js/main.63da9ce7.js.map",
+    "main.64d7d9a5.css.map": "/Auxzn/static/css/main.64d7d9a5.css.map",
+    "main.2a59290a.js.map": "/Auxzn/static/js/main.2a59290a.js.map",
     "453.1ab6a46a.chunk.js.map": "/Auxzn/static/js/453.1ab6a46a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46fd4d3e.css",
-    "static/js/main.63da9ce7.js"
+    "static/css/main.64d7d9a5.css",
+    "static/js/main.2a59290a.js"
   ]
 }
