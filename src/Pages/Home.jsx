@@ -89,7 +89,7 @@ export default function Home() {
                   </div>
 
                   <div className="card-body text-center product-cardBodyBorder d-flex flex-column justify-content-center">
-                    <h3 className="h5 mb-3">{p.title}</h3>
+                    <h3 className="h5 fw-bold mb-3">{p.title}</h3>
 
                     <NavLink
                       to="/products"
